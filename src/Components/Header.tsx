@@ -4,15 +4,10 @@ import {ButtonCustom} from "./ButtonCustom";
 
 type HeaderPropsType = {
     title: string,
-    navigation: any,
-    navData: Array<string | undefined>
+    nav: (num: number) => void
 }
 
-export const Header = ({title, navigation, navData}: HeaderPropsType) => {
-
-    const nav = (num: number) => {
-        navigation.navigate(navData[num] ? navData[num] : 'Home')
-    }
+export const Header = ({title, nav}: HeaderPropsType) => {
 
     return (
         <View style={styles.container}>

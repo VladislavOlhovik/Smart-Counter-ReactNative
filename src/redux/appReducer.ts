@@ -15,13 +15,13 @@ const SET_VALUE = 'SET_VALUE'
 const CREATE_COUNTER = 'CREATE_COUNTER'
 
 let initState: StateType = [{
-    title:'wer',
+    title:'first',
     id:'2131234324',
     value:'Click SET',
     maxValue:5,
     startValue:0
 },{
-    title:'rew',
+    title:'second',
     id:'213154684524',
     value:'Click SET',
     maxValue:5,
